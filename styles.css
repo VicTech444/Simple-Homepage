@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: color 2s, background-color 1s;
+}
+
+html {
+    font-family: 'Poppins', 'sans-serif';
+
+}
+
+/* Modificaciones compartidas */
+
+.nav-menu ul, .nav-menu-mobile ul, .buttons-container, .benefits {
+    flex-wrap: wrap;
+}
+
+.bg-223344 {
+    background-color: #223344;
+}
+
+.color-223344, .information h1, .emoji-text label {
+    color: #223344;
+}
+
+.fz-14 {
+    font-size: 14px;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.font-weight {
+    font-weight: 600;
+}
+
+.dplay-flex {
+    display: flex;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/* Modificaciones especificas */
+body {
+    width: 100%;
+    
+}
+
+.container {
+    margin: 30px 80px 100px;
+}
+
+header {
+    justify-content: space-between;
+}
+
+.nav-menu ul, .nav-menu-mobile ul {
+    column-gap: 40px;
+}
+
+.nav-menu li, .nav-menu-mobile li {
+    list-style: none;
+}
+
+.nav-menu li a, .nav-menu-mobile li a {
+    text-align: center;
+    color: #223344a6;
+    transition: none;
+}
+
+.nav-menu li a:hover, .nav-menu-mobile li a:hover {
+    color: #223344 !important;
+    transition: none;
+}
+
+.color-mode {
+    width: max-content;
+    height: max-content;
+    border-radius: 15px;
+}
+
+.sun-button, .moon-button {
+    transform: scale(0.78);
+    border-radius: 100%;
+}
+
+.sun-button {
+    background-color: #fff;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.information {
+    margin-top: 50px;
+    flex-wrap: wrap-reverse;
+    row-gap: 30px;
+}
+
+.information h1 {
+    font-size: 60px;
+    margin: 10px 0 30px;
+}
+
+.text-container, .image-container {
+    flex-grow: 1;
+}
+
+.parragraph-text {
+    font-weight: 500;
+    max-width: 500px;
+}
+
+.gray-tone {
+    color: #656566;
+}
+
+.buttons-container {
+    margin: 50px 0 50px;
+    row-gap: 35px;
+}
+
+#get-started, #live-demo {
+    padding: 15px 35px;
+    border-radius: 15px;
+    border: none;
+}
+
+#get-started {
+    background-color: #2A4DD0;
+    color: #F2F9FE;
+    text-decoration: none;
+}
+
+#live-demo {
+    color: #2A4DD0;
+}
+
+.verified-image {
+    vertical-align: middle;
+}
+
+
+.benefits {
+    column-gap: 15px;
+    row-gap: 5px;
+}
+
+.benefits img {
+    margin-right: 10px;
+}
+
+#page-image {
+    width: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Queries Modifications */
+
+.mobile-color-white {
+    color: #fff;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    right: 30px;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(158, 156, 156, 0.082);
+}
+
+.line-one, .line-two, .line-three {
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.menu-container {
+    margin-top: -30px;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    display: none;
+    padding-top: 80px;
+}
+
+.nav-menu-mobile ul {
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.nav-menu-mobile ul li a {
+    font-size: 30px;
+}
+
+.mobile {
+    margin: 20px auto;
+}
+
+@media (min-width : 320px) and (max-width: 768px) {
+
+    .nav-menu, .desktop {
+        display: none;
+    }
+
+    .container {
+        margin: 0 0 50px;
+        padding: 30px;
+    }
+
+    .information h1 {
+        font-size: 40px;
+    }
+
+    #page-image {
+        margin-top: -30px;
+        width: 100%;
+    }
+}
+
+@media (min-width : 769px) and (max-width: 1119px) {
+
+    .nav-menu, .desktop {
+        display: none;
+    }
+
+    .container {
+        margin: 0 0 50px;
+        padding: 30px;
+    }
+
+    .information {
+        padding: 0 75px 0;
+    }
+
+    .information h1 {
+        font-size: 40px;
+    }
+
+    #page-image {
+        margin-top: -30px;
+    }
+}
+
+
+@media only screen and (min-width: 1120px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .menu-container, .mobileMenu, .nav-menu-mobile ul, .mobile {
+        display: none;
+    }
+
+    .information {
+        padding: 30px;
+
+    }
+
+    .subtext-container {
+        width: 450px;
+    }
+
+}
